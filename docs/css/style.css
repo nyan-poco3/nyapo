@@ -1,4 +1,3 @@
-@charset "UTF-8";
 body {
   background-color: #C8F4E7;
   color: #9967AB;
@@ -79,9 +78,10 @@ body {
 .header-img {
   width: 100%;
   height: 40%;
-  background-image: url("../img/nyanpoco3_art_1.jpeg");
+  background-image: url("../img/nyanpoco3_art_1.jpe");
   background-size: cover;
   background-position: center;
+  background-color: #eeeeee;
 }
 
 @media (min-width: 750px) {
@@ -98,8 +98,7 @@ body {
 .works-bg {
   position: absolute;
   z-index: -1;
-  width: 240%;
-  height: 120%;
+  width: 200%;
   left: 50%;
   background-color: #ffffff;
   -webkit-transform: translate(-50%, 0);
@@ -109,9 +108,57 @@ body {
   margin-top: -2%;
 }
 
+.works-bg:after {
+  position: absolute;
+  background-color: #ffffff;
+  width: 200%;
+  height: 250%;
+  content: "";
+}
+
+.works-button {
+  position: absolute;
+  margin-top: -3%;
+  right: 4px;
+  left: auto;
+  width: 100px;
+  height: 40px;
+  z-index: 2;
+}
+
+.works-button a {
+  color: #47CCEA;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  border: solid 2px #47CCEA;
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.works-button a:hover {
+  color: #667EFF;
+  border-color: #667EFF;
+}
+
+.mt-60 {
+  margin-top: 60px;
+}
+
 .section-title {
-  width: 100％;
+  width: 70%;
   margin-bottom: -4px;
+  margin: auto;
 }
 
 .section-title img {
@@ -134,6 +181,7 @@ body {
   border-radius: 4px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  background-color: #eeeeee;
 }
 
 .thumbnail-inner img {
@@ -153,14 +201,14 @@ body {
 
 .about {
   width: 100%;
+  margin-top: 60px;
   position: relative;
 }
 
 .about-bg {
   position: absolute;
   z-index: -1;
-  width: 240%;
-  height: 120%;
+  width: 200%;
   left: 50%;
   background-color: #C7F4E7;
   -webkit-transform: translate(-50%, 0);
@@ -170,23 +218,66 @@ body {
   margin-top: -2%;
 }
 
-.about-text p p {
+.about-bg:after {
+  position: absolute;
+  background-color: #C7F4E7;
+  width: 200%;
+  height: 250%;
+  content: "";
+}
+
+.about-text p {
   color: #9967AB;
-  font-size: 14px;
-  line-height: 160%;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.about-text a {
+  text-decoration: none;
+  padding: 8px 8px 8px 0px;
+  color: #47CCEA;
+}
+
+.about-text a:visited {
+  color: #47CCEA;
+}
+
+.about-text a:hover {
+  color: #667EFF;
+}
+
+.about-text i {
+  font-size: 32px;
+}
+
+.about-text i:hover {
+  color: #667EFF;
+}
+
+.about-text span {
+  font-size: 24;
+  font-family: "Montserrat", sans-serif;
+}
+
+.about ul {
+  list-style: none;
+}
+
+.about ul li:before {
+  font-family: "Material Icons";
+  content: '\e87d';
+  margin-right: 4px;
 }
 
 .contact {
   width: 100%;
-  height: 100%;
   position: relative;
 }
 
 .contact-bg {
   position: absolute;
   z-index: -1;
-  width: 240%;
-  height: 120%;
+  width: 200%;
   left: 50%;
   background-color: #9967AB;
   -webkit-transform: translate(-50%, 0);
@@ -196,9 +287,77 @@ body {
   margin-top: -2%;
 }
 
-.contact-text p p {
-  color: #9967AB;
-  font-size: 14px;
-  line-height: 160%;
+.contact-bg:after {
+  position: absolute;
+  background-color: #9967AB;
+  width: 200%;
+  height: 250%;
+  content: "";
+}
+
+.contact-text {
+  padding-top: 12%;
+}
+
+.contact-text p {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.contact ul {
+  color: #ffffff;
+  list-style: none;
+}
+
+.contact ul li {
+  margin: 5px 0;
+}
+
+.contact ul li:before {
+  font-family: "Material Icons";
+  content: '\e87e';
+  margin-right: 4px;
+}
+
+.form-area {
+  width: 100%;
+}
+
+@media (min-width: 550px) {
+  .form-area {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+.form-title {
+  color: #ffffff;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 16px;
+  margin-left: 8px;
+}
+
+.form-title:before {
+  font-family: "Material Icons";
+  font-size: 22px;
+  margin-right: 4px;
+  vertical-align: bottom;
+  line-height: 1;
+  content: "\e3c9";
+  font-weight: 100 !important;
+}
+
+.form-item {
+  width: 100%;
+  color: #333 !important;
+  border-radius: 20px !important;
+  background: #CCB3D5 !important;
+  border: solid 1px #9967AB !important;
+  padding: 4px 10px !important;
+}
+
+textarea {
+  height: 200px;
 }
 /*# sourceMappingURL=style.css.map */
