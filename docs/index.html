@@ -13,16 +13,19 @@
     rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/svg.css">
+    <link rel="stylesheet" href="./css/lightcase.css">
+    <script src="https://kit.fontawesome.com/71c939421f.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="./js/lightcase.js"></script>
     <script src="./js/artwork.js"></script>
   </head>
   <body>
     <div class="all-blur">
       <div class="header">
         <a href="/" class="menu">HOME</a>
-        <a href="/" class="menu">WORKS</a>
-        <a href="/" class="menu">ABOUT</a>
-        <a href="/" class="menu">CONTACT</a>
+        <a href="/works.html" class="menu">WORKS</a>
+        <a href="#1" class="menu">ABOUT</a>
+        <a href="#2" class="menu">CONTACT</a>
         <div class="menu-m"></div>
       </div>
       <section>
@@ -41,74 +44,116 @@
           <div class="row">
             <div class="three columns thumbnail">
               <div class="thumbnail-inner">
-                <img src="./img/nyanpoco3_art_1.jpeg">
+                <a href="./img/nyanpoco3_art_1.jpeg" data-rel="lightcase">
+                  <img src="./img/nyanpoco3_art_1.jpeg">
+                  </a>
               </div>
             </div>
             <div class="three columns thumbnail">
               <div class="thumbnail-inner">
-                <img src="./img/nyanpoco3_art_1.jpeg">
+                <img src="./img/nyanpoco3_art_1.jpe">
               </div>
             </div>
             <div class="three columns thumbnail">
               <div class="thumbnail-inner">
-                <img src="./img/nyanpoco3_art_1.jpeg">
+                <img src="./img/nyanpoco3_art_1.jpe">
               </div>
             </div>
             <div class="three columns thumbnail">
               <div class="thumbnail-inner">
-                <img src="./img/nyanpoco3_art_1.jpeg">
+                <img src="./img/nyanpoco3_art_1.jpe">
               </div>
             </div>
           </div>
           <div class="row">
             <div class="three columns thumbnail">
               <div class="thumbnail-inner">
-                <img src="./img/nyanpoco3_art_1.jpeg">
+                <img src="./img/nyanpoco3_art_1.jpe">
               </div>
             </div>
             <div class="three columns thumbnail">
               <div class="thumbnail-inner">
-                <img src="./img/nyanpoco3_art_1.jpeg">
+                <img src="./img/nyanpoco3_art_1.jpe">
               </div>
             </div>
             <div class="three columns thumbnail">
               <div class="thumbnail-inner">
-                <img src="./img/nyanpoco3_art_1.jpeg">
+                <img src="./img/nyanpoco3_art_1.jpe">
               </div>
             </div>
             <div class="three columns thumbnail">
               <div class="thumbnail-inner">
-                <img src="./img/nyanpoco3_art_1.jpeg">
+                <img src="./img/nyanpoco3_art_1.jpe">
               </div>
             </div>
           </div>
+          <div class="works-button">
+            <a href="/works.html">more<i class="material-icons">double_arrow</i></a>
+          </div>
         </section>
-        <section class="about">
+        <section class="about" id="1">
           <div class="section-title">
             <img src="./img/t-about.png">
           </div>
-            <div class="about-bg"></div>
-            <div class="about-text">
-              <h4 class="subtitle">profile</h4>
-              <p>
-                <strong>にゃんぽこマーチ</strong> / Nyanpoco March<br>
-                <strong>南歩Komachi</strong> / Nampo Komachi<br><br>
-                Freelance illustrator in Japan.<br>
-                フリーランスのイラストレーターです。
-                キラキラしている男子の絵を描いています。<br>
-                書籍の挿絵、ポスター・フライヤー、Tシャツ、ゲームのキャラクターデザイン・スチル、アバター制作など
-                多岐に渡ってイラスト制作を行ってきました。
-                WebサイトのUI/UXデザイン、コーディングもやっています。<br><br>
+          <div class="about-bg"></div>
+          <div class="about-text">
+            <h4 class="subtitle">profile</h4>
+            <p>
+              <strong>にゃんぽこマーチ</strong> / Nyanpoco March<br>
+              <strong>南歩Komachi</strong> / Nampo Komachi (商業ネーム)<br>
+              <a href="https://www.pixiv.net/users/15507449" target="_blank"><span>Pixiv</span></a>
+              <a href="https://twitter.com/nyan_poco3" target="_blank"><i class="fab fa-twitter"></i></a>
+              <br><br>
+              Freelance illustrator in Japan.<br>
+              フリーランスのイラストレーターです。
+              キラキラしている男子の絵を描いています。<br>
+              書籍の挿絵、ポスター・フライヤー、Tシャツ、ゲームのキャラクターデザイン・スチル、アバター制作など
+              多岐に渡ってイラスト制作を行ってきました。
+              WebサイトのUI/UXデザイン、コーディングもやっています。<br><br>
 
-                使用ツール：Clip Studio Paint, PhotoshopCC, IllustratorCC, Figma
-              </p>
-            </div>
+              使用ツール：Clip Studio Paint, PhotoshopCC, IllustratorCC, Figma<br>
+              <ul>
+                得意なもの
+                <li>イケメン男性キャラクター</li>
+                <li>1.5頭身〜3頭身のデフォルメキャラクター</li>
+                <li>Illustratorを使用したベクター素材作成(ロゴ、アバター衣装など)</li>
+                <li></li>
+              </ul>
+            </p>
+          </div>
         </section>
-        <section class="contact">
+        <section class="contact" id="2">
           <div class="section-title">
             <img src="./img/t-contact.png">
           </div>
-            <div class="contact-bg"></div>
+          <div class="contact-bg"></div>
+          <div class="contact-text">
+            <p>
+              お仕事のご依頼・ご相談やご意見・感想は<br><strong style="text-decoration: underline;">nyan.poco.march[at]gmail.com</strong><br>
+              ↑こちらのメールアドレスか、もしくは下記のメールフォームからお気軽にお問い合わせ下さい。<br>
+              5日以上返信がなかった場合はメールアドレスがお間違いの可能性がありますのでメールフォームから再送をお願いいたします。<br><br>
+              <strong>--現在2021年3月以降のお仕事を募集しています。--</strong>
+              <ul>
+                <li>ご依頼内容</li>
+                <li>予算</li>
+                <li>スケジュール</li>
+                <li>制作点数、サイズ、仕様</li>
+              </ul>
+            </p>
+          </div>
+          <div class="form-area">
+            <form action="https://docs.google.com/forms/u/3/d/e/1FAIpQLSfKWijRxJMvsI2G5JK1CHrXmvLSDJrpFuUoj2OGc72z-5r-Rw/formResponse" class="row">
+              <label for="name" class="form-title">お名前*</label>
+              <input id="name" type="text" name="entry.1753593645" required="" class="form-item">
+              <label for="e-mail" class="form-title">メールアドレス*</label>
+              <input id="e-mail" type="email" name="entry.485351459" required="" class="form-item">
+              <label for="title" class="form-title">タイトル</label>
+              <input id="title" type="text" name="entry.2110941793" class="form-item">
+              <label for="message" class="form-title">お問い合わせ内容*</label>
+              <textarea id="message" name="entry.1608387016" required="" class="form-item"></textarea><br>
+              <button type="submit" name="button" value="送信">送信</button>
+            </form>
+          </div>
         </section>
       </div>
     </div>

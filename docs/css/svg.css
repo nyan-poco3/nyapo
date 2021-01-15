@@ -1,6 +1,7 @@
 .svg-n path {
+	-webkit-animation: nyapo 2s ease-in-out forwards;
 	animation: nyapo 2s ease-in-out forwards; 
-	stroke: #C8F4E7;
+	stroke: #9967AB;
 	stroke-dasharray: 1800;
 	stroke-dashoffset: 0;
 	stroke-width: 1;
@@ -9,9 +10,27 @@
 .svg-area {
 	padding-top: 84px;
 	padding-left: 24px;
-  width:500px;
+  width:50%;
 }
-  
+
+@-webkit-keyframes nyapo {
+  0% {
+    fill: transparent;
+    stroke-dashoffset: 1800;
+  }
+  10% {
+    fill: transparent;
+  }
+  80% {
+    fill: transparent;
+  }
+  100% {
+    fill: #9967AB;
+    stroke-dashoffset: 0;
+    stroke-width:2px;
+  }
+}
+
 @keyframes nyapo {
   0% {
     fill: transparent;
@@ -24,7 +43,7 @@
     fill: transparent;
   }
   100% {
-    fill: #C8F4E7;
+    fill: #9967AB;
     stroke-dashoffset: 0;
     stroke-width:2px;
   }
